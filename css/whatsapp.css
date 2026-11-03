@@ -10,43 +10,40 @@
 .text{
 	text-align: center;
 }
-form div{
+.box form div{
 	display: flex;
 	justify-content: space-between;
 	gap: 5px;
-	
+
 }
 
-span{
+.box span{
 	width: 100%;
 }
-span input{
+.box span input{
 	width: 100%;
 	padding: 10px;
 	margin: 5px 0 20px 0;
-	
+
 }
-textarea{
+.box textarea{
 	width: 100%;
 	padding: 10px;
 	margin-top: 5px;
-	
+
 }
-button{
+.whatsapp-button{
+	display: block;
 	background-color: #e84e78;
 	padding: 10px 30px;
 	border-radius: 5px;
 	color: white;
 	border: none;
-	margin-top: 20px;
-	align-items: center;
-	position: relative;
-	margin-left: 45%;
+	margin: 20px auto 0;
 	transition: .5s;
 }
-button:hover{
+.whatsapp-button:hover{
 	background-color: #15161b;
 	cursor: pointer;
 	transition: .5s;
 }
-

@@ -1,13 +1,18 @@
 function sendToWhatsapp(){
-	let number = "+254712350742";
-	let website = 'https://cakeologywithjumana.com/';
-	let name = document.getElementById('name').value;
-	let message = document.getElementById('message').value;
+	// wa.me needs the number as digits only (no "+")
+	let number = "254712350742";
+	let website = 'https://www.cakeologyke.com/';
+	let name = document.getElementById('name').value.trim();
+	let message = document.getElementById('message').value.trim();
 
-	var url = "https://wa.me/" + number + "?text="
-	+ "Website : " +website+ "%0a%0a"
-	+ "Name : " +name+ "%0a"
-	+ "Message : " +message;
+	if (!name || !message) {
+		alert("Please enter your name and a message.");
+		return;
+	}
 
-	window.open(url, '_blank').focus();
+	let text = "Website : " + website + "\n\n"
+	+ "Name : " + name + "\n"
+	+ "Message : " + message;
+
+	window.open("https://wa.me/" + number + "?text=" + encodeURIComponent(text), '_blank');
 }

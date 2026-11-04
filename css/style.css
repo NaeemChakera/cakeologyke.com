@@ -247,15 +247,18 @@ h6,
     width: 58%;
 }
 
-.img-twice .col-6:last-child {
+.img-twice .col-6:first-child {
     position: relative;
-    margin-left: -16%;
-    margin-top: 18%;
     z-index: 1;
 }
 
-.img-twice .col-6:last-child img {
+.img-twice .col-6:first-child img {
     border: 6px solid #FFFFFF;
+}
+
+.img-twice .col-6:last-child {
+    margin-left: -16%;
+    margin-top: 18%;
 }
 
 

@@ -243,17 +243,19 @@ h6,
 
 
 /*** About ***/
-.img-twice::before {
-    position: absolute;
-    content: "";
-    width: 60%;
-    height: 80%;
-    top: 10%;
-    left: 20%;
-    background: var(--primary);
-    border: 25px solid var(--light);
-    border-radius: 6px;
-    z-index: -1;
+.img-twice .col-6 {
+    width: 58%;
+}
+
+.img-twice .col-6:last-child {
+    position: relative;
+    margin-left: -16%;
+    margin-top: 18%;
+    z-index: 1;
+}
+
+.img-twice .col-6:last-child img {
+    border: 6px solid #FFFFFF;
 }
 
 
